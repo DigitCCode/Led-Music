@@ -10,7 +10,7 @@ body {
 	background: #333;
 }
 
-/*Header*/
+/*Menu do topo*/
 .menu-p {
 	display: flex;
 	justify-content: space-evenly;
@@ -23,6 +23,7 @@ body {
 	width: 50%;
 	padding: 20px;
 	transition: 0.5s;
+	user-select: none;
 }
 
 .menu-p li:hover{
@@ -37,6 +38,7 @@ main {
 /*Instumentos*/
 .instrumentos {
 	list-style: none;
+	user-select: none;
 	/*border: 1px solid #ccc;*/
 	margin: 0 auto;
 	width: 90%;
@@ -50,7 +52,6 @@ main {
 }
 
 .instrumentos .inst li {
-	background-color: blue;
 	height: 20px;
 	margin-top: 10vh;
 }
@@ -70,5 +71,13 @@ main {
 .instrumentos li:hover, button:hover {
 	transform: scale(1.1);
 	opacity: 0.9;
+	cursor: pointer;
 }
+
+.instrumentos li:active, button:active {
+	transform: scale(0.9);
+	opacity: 0.9;
+	cursor: progress;
+}
+/*Menu de baixo*/
 /*Footer*/
