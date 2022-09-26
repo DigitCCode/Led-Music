@@ -52,6 +52,23 @@ main {
 .instrumentos .inst li {
 	background-color: blue;
 	height: 20px;
-	margin-top: 5vh;
+	margin-top: 10vh;
+}
+
+.instrumentos button {
+	background-image: linear-gradient(to right, #0000ff, #00009b);
+	color: white;
+	width: 20vh;
+	height: 10vh;
+}
+
+.instrumentos li, button {
+	border-radius: 10px;
+	transition: 0.2s;
+}
+
+.instrumentos li:hover, button:hover {
+	transform: scale(1.1);
+	opacity: 0.9;
 }
 /*Footer*/
