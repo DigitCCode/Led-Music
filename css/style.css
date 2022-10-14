@@ -36,14 +36,24 @@ main {
 	overflow: hidden;
 }
 /*Instumentos*/
-.instrumentos, li, button {
-	list-style: none;
-	user-select: none;
-	margin: 0 auto;
+
+.divs {
+	width: 100%;
+	height: 94vh;
 	display: flex;
-	flex-direction: column;
+}
+
+.instrumentos {
+	width: 50%;
+	display: flex;
 	justify-content: center;
 	align-items: center;
+	flex-wrap: wrap;
+}
+
+.instrumentos li {
+	list-style: none;
+	user-select: none;
 }
 
 .instrumentos button {
@@ -52,8 +62,8 @@ main {
 }
 
 .instrumentos li, button {
-	width: 99%;
-	height: 20vh;
+	width: 30%;
+	height: 10vh;
 	transition: 0.2s;
 }
 
@@ -67,6 +77,11 @@ main {
 	transform: scale(0.9);
 	opacity: 0.9;
 	cursor: progress;
+}
+
+.estudio {
+	border: 1px solid #fff;
+	width: 50%;
 }
 /*Menu de baixo*/
 /*Footer*/
